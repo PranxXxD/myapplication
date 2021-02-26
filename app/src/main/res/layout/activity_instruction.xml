@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding_Bottom="@dimen/activity_vertical_margin"
+        android:padding_Left="@dimen/activity_horizontal_margin"
+        android:padding_Right="@dimen/activity_horizontal_margin"
+        android:padding_Top="@dimen/activity_vertical_margin"
+        tools:context=".Instructions" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="INSTRUCTIONS"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:onClick="back"
+            android:text="Main Menu" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="15dp"
+            android:text="@string/help" />
+
+    </RelativeLayout>

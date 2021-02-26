@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding_Bottom="@dimen/activity_vertical_margin"
+    android:padding_Left="@dimen/activity_horizontal_margin"
+    android:padding_Right="@dimen/activity_horizontal_margin"
+    android:padding_Top="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:onClick="Register"
+        android:layout_marginBottom="71dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:onClick="Display"
+        android:layout_marginTop="74dp"
+        android:text="View Registered" />
+1
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="Instructions"
+        android:layout_centerVertical="true"
+        android:text="Instructions" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="Verify"
+        android:text="Register Your Mobile Number" />
+
+</RelativeLayout>
